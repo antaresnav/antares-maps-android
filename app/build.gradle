@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion toolVersions.android.compileSdk
+    defaultConfig {
+        minSdkVersion toolVersions.android.minSdk
+        applicationId "com.antaresnav.maps.demo"
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // AntaresMaps
+    implementation "com.antaresnav.maps:antaresmaps-android:${libVersions.antaresMaps}"
+
+    // GoogleMaps
+    implementation "com.google.android.gms:play-services-maps:${libVersions.playServices}"
+
+    // Support Libraries
+    implementation "androidx.appcompat:appcompat:${libVersions.android.appCompat}"
+    implementation "androidx.constraintlayout:constraintlayout:${libVersions.android.constraintLayout}"
+    implementation "com.google.android.material:material:${libVersions.android.material}"
+
+    // Testing
+    testImplementation "junit:junit:${libVersions.junit}"
+    androidTestImplementation "androidx.test:runner:${libVersions.testRunner}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${libVersions.espressoCore}"
+
+}

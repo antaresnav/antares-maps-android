@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/map_container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            map:cameraTargetLat="40.72"
+            map:cameraTargetLng="-74.00"
+            map:cameraZoom="8" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            map:cameraTargetLat="51.51"
+            map:cameraTargetLng="-0.12"
+            map:cameraZoom="8"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/map_container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            map:cameraTargetLat="48.85"
+            map:cameraTargetLng="2.35"
+            map:cameraZoom="8"/>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            map:cameraTargetLat="35.69"
+            map:cameraTargetLng="139.69"
+            map:cameraZoom="8"/>
+    </LinearLayout>
+</LinearLayout>

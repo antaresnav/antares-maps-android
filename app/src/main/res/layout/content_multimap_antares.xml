@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/map_container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <com.antaresnav.maps.MapView
+            android:id="@+id/map1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            map:antares_cameraTargetLat="40.72"
+            map:antares_cameraTargetLng="-74.00"
+            map:antares_cameraZoom="8"
+            map:antares_styleUrl="https://www.dropbox.com/s/xfrs2nwetabs8eg/navigation-guidance-day.json?dl=1"/>
+
+        <com.antaresnav.maps.MapView
+            android:id="@+id/map2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            map:antares_cameraTargetLat="51.51"
+            map:antares_cameraTargetLng="-0.12"
+            map:antares_cameraZoom="8"
+            map:antares_styleUrl="https://www.dropbox.com/s/xfrs2nwetabs8eg/navigation-guidance-day.json?dl=1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/map_container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <com.antaresnav.maps.MapView
+            android:id="@+id/map3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            map:antares_cameraTargetLat="48.85"
+            map:antares_cameraTargetLng="2.35"
+            map:antares_cameraZoom="8"
+            map:antares_styleUrl="https://www.dropbox.com/s/xfrs2nwetabs8eg/navigation-guidance-day.json?dl=1"/>
+
+        <com.antaresnav.maps.MapView
+            android:id="@+id/map4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            map:antares_cameraTargetLat="35.69"
+            map:antares_cameraTargetLng="139.69"
+            map:antares_cameraZoom="8"
+            map:antares_styleUrl="https://www.dropbox.com/s/xfrs2nwetabs8eg/navigation-guidance-day.json?dl=1"/>
+    </LinearLayout>
+</LinearLayout>
