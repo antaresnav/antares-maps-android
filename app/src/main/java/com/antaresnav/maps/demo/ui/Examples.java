@@ -21,6 +21,7 @@ import com.antaresnav.maps.demo.examples.BasicMapAntaresActivity;
 import com.antaresnav.maps.demo.examples.BasicMapGoogleActivity;
 import com.antaresnav.maps.demo.examples.CameraAntaresActivity;
 import com.antaresnav.maps.demo.examples.CameraGoogleActivity;
+import com.antaresnav.maps.demo.examples.ChinaMapAntaresActivity;
 import com.antaresnav.maps.demo.examples.EventsAntaresActivity;
 import com.antaresnav.maps.demo.examples.EventsGoogleActivity;
 import com.antaresnav.maps.demo.examples.MarkerAntaresActivity;
@@ -99,5 +100,9 @@ public final class Examples {
             new ExampleDetails(R.string.polyline_demo_label,
                     R.string.polyline_demo_description,
                     ExampleDetails.SDK_TYPE_GOOGLE,
-                    PolylineGoogleActivity.class));
+                    PolylineGoogleActivity.class),
+            new ExampleDetails(R.string.china_map_demo_label,
+                       R.string.china_map_demo_description,
+                       ExampleDetails.SDK_TYPE_ANTARES,
+                       ChinaMapAntaresActivity.class));
 }

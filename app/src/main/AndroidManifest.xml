@@ -146,6 +146,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.antaresnav.maps.demo.ui.MainActivity" />
         </activity>
+        <activity
+            android:name=".examples.ChinaMapAntaresActivity"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.antaresnav.maps.demo.ui.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

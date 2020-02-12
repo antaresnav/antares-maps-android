@@ -34,6 +34,8 @@
     <string name="polygon_demo_description">Demonstrates how to add Polygons to a map.</string>
     <string name="polyline_demo_label">Polylines</string>
     <string name="polyline_demo_description">Demonstrates how to add Polylines to a map.</string>
+    <string name="china_map_demo_label">China Map</string>
+    <string name="china_map_demo_description">Demonstrates a china map with GCJ-02 coordinate system</string>
     <string name="properties_australia_polygon">Properties for Polygon over Australia</string>
     <string name="right_arrow">\u2192</string>
     <string name="rotation">Rotation:</string>
@@ -64,4 +66,5 @@
     <string name="pattern_dotted">Dotted</string>
     <string name="pattern_dashed">Dashed</string>
     <string name="pattern_mixed">Mixed</string>
+    <string name="gcj02_coordinate_system">GCJ-02 Coordinate System</string>
 </resources>
